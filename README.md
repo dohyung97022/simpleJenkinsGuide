@@ -1,14 +1,14 @@
 # simpleJenkinsGuide
 
-이 repository 는 jenkins 의 기능 중 github push 에서부터 CI/CD 까지 구성하는 
+이 repository 는 jenkins 의 기능 중 github push 에서부터 CI/CD 까지 구성하는    
 것을 기록으로 남기는 목적을 갖고 있습니다.    
 java, AWS 를 이용합니다.   
 
 ### Jenkins 란 무엇인가?
   * CI/CD 를 도와주는 tool 입니다.
-  * 보통 Master/Slave machine 으로 구성되에 Master 에 
-    Jenkins 가 돌아가며 github 에서 project 를 받아 build 하여
-    완성본을 Slave 에 옮겨 실행시키는 역활을 합니다.
+  * 보통 Master/Slave machine 으로 구성되에 Master 에    
+    Jenkins 가 돌아가며 github 에서 project 를 받아 build 하여   
+    완성본을 Slave 에 옮겨 실행시키는 역활을 합니다.   
   * Jenkins 는 [City](https://en.wikipedia.org/wiki/City_(novel)) 라는 소설의 
     로봇 집사 이름입니다.  
     
@@ -165,7 +165,7 @@ java, AWS 를 이용합니다.
     <br>
   * Github 설정    
     ![](img/cloneGit.PNG)       
-    push 되면 deploy 될 github 의 .git 주소를 복사합니다.
+    push 되면 deploy 될 github 의 .git 주소를 복사합니다.   
     ![](img/gitSetup.PNG)    
     여기에서 .git 으로 끝난다는 점을 유의하세요.   
     가져와서 build 할 branch 설정도 가능합니다.    
