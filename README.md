@@ -334,3 +334,34 @@ java, AWS 를 이용합니다.
     Build 번호를 눌러보시면 console Output 을 확인하실 수 있습니다.
   </details>
   <br>
+
+  <details>
+  <summary>
+  Gitignore 되는 보안 파일 설정
+  </summary>
+  <br>
+  
+  저희가 지금까지 설정한 Jenkins 의 진행과정은 다음과 같습니다.   
+  <br>
+  1. github 에서 master server 로 pull 한다.
+  2. master 에서 build 한다.
+  3. master 에서 build 된 파일을 slave 에게 준다.
+  4. slave 에서 파일을 실행시킨다.
+
+  그런데 보안 파일들과 같이 git 에 push 가 안되는 파일의 경우 어떻게 해야 할까요?   
+  <br>
+  
+  build 를 하기 이전에 해당 파일을 master server 에 넣어주는 것이 좋습니다.      
+  넣어주는 방법에는 정답이 없습니다.       
+  wget 도 좋고, cp 도 좋습니다.    
+
+  중요한 것은 build 하기 이전에 해당 command 들이 실행되어야 한다는 점입니다.   
+  <br>
+
+  ![](img/executeShell.PNG)   
+  Execute shell 을 눌러주신 뒤에 Invoke Gradle script 위로 드래그 할 수 있습니다.   
+
+  여기에서의 shell command 가 실행되는 위치는 빌드가 실행되는 위치와 동일합니다.   
+  var/lib/jenkins/workspace/지정하신 워크명/   
+  </details>
+  <br>
